@@ -27,6 +27,7 @@
 
 #include "reset_util.h"
 
+
 #ifdef BUILD_APP
 /**
  * This function initializes the NCP app.
@@ -46,7 +47,29 @@ static otInstance* sInstance = NULL;
 
 #endif
 
+otInstance *sInstance;
 
+void otSysProcessDrivers(otInstance *aInstance)
+{
+    sInstance = aInstance;
+
+    // should sleep and wait for interrupts here
+#if defined(SL_CATALOG_OT_RCP_GP_INTERFACE_PRESENT)
+    efr32GpProcess();
+#endif
+
+#if OPENTHREAD_CONFIG_NCP_HDLC_ENABLE
+    efr32UartProcess();
+#elif OPENTHREAD_CONFIG_NCP_CPC_ENABLE
+    efr32CpcProcess();
+#elif OPENTHREAD_CONFIG_NCP_SPI_ENABLE
+    efr32SpiProcess();
+#endif
+    efr32RadioProcess(aInstance);
+
+    // See alarm.c: Wrapped in a critical section
+    efr32AlarmProcess(aInstance);
+}
 
 
 otInstance* sl_ot_create_instance(void)
