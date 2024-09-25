@@ -81,7 +81,7 @@ extern "C" void otPlatRadioTxStarted(otInstance *aInstance, otRadioFrame *aFrame
 exit:
     return;
 }
-DelayBeforeRetx
+
 extern "C" void otPlatRadioTxDone(otInstance *aInstance, otRadioFrame *aFrame, otRadioFrame *aAckFrame, otError aError)
 {
     Instance     &instance = AsCoreType(aInstance);

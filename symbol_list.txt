@@ -99,10 +99,14 @@ rcp_otPlatRadioReceive				otPlatRadioReceive
 rcp_otPlatRadioEnable				otPlatRadioEnable
 rcp_otPlatRadioUpdateCslSampleTime		otPlatRadioUpdateCslSampleTime
 rcp_otPlatRadioSetExtendedAddress		otPlatRadioSetExtendedAddress
+rcp_otPlatRadioSetMacFrameCounterIfLarger       otPlatRadioSetMacFrameCounterIfLarger
+rcp_otPlatRadioSetMacFrameCounter               otPlatRadioSetMacFrameCounter
 rcp_otPlatRadioGetCcaEnergyDetectThreshold	otPlatRadioGetCcaEnergyDetectThreshold
 rcp_otPlatRadioSetCcaEnergyDetectThreshold	otPlatRadioSetCcaEnergyDetectThreshold
 rcp_otPlatRadioGetPromiscuous			otPlatRadioGetPromiscuous
 rcp_otPlatRadioEnergyScan			otPlatRadioEnergyScan
+rcp_otPlatRadioGetCslAccuracy			otPlatRadioGetCslAccuracy
+rcp_otPlatRadioGetCslUncertainty		otPlatRadioGetCslUncertainty
 rcp_efr32RadioProcess				efr32RadioProcess
 #
 rcp_memcpy					memcpy
