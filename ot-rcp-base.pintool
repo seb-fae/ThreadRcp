@@ -35,9 +35,10 @@
     <property object="PORTIO" propertyId="portio.usart0.enable.rts" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart0.enable.rx" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart0.enable.tx" value="Enabled"/>
-    <property object="PORTIO" propertyId="portio.usart0.location.cts" value="21"/>
-    <property object="PORTIO" propertyId="portio.usart0.location.rx" value="9"/>
-    <property object="PORTIO" propertyId="portio.usart0.location.tx" value="8"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.cts" value="36"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.rts" value="37"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.rx" value="6"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.tx" value="5"/>
     <property object="PTI" propertyId="ABModule.selectedRequirement" value="pti%T%SL_RAIL_UTIL_PTI%T%sl_rail_util_pti_config.h"/>
     <property object="PTI" propertyId="ABPeripheral.included" value="true"/>
     <property object="USART0" propertyId="ABModule.selectedRequirement" value="usart%T%SL_UARTDRV_USART_RCPCOM%T%sl_uartdrv_usart_rcpcom_config.h"/>

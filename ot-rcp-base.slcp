@@ -31,7 +31,10 @@ component:
 - {id: bootloader_interface}
 - {id: brd4001a}
 - {id: brd4186a}
+- instance: [vcom]
+  id: cpc_secondary_driver_uart_usart
 - {id: freertos}
+- {id: iostream_vuart}
 - {id: ot_crash_handler}
 - {id: ot_stack_rcp}
 - {id: rail_lib_multiprotocol}

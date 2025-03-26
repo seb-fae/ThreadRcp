@@ -110,6 +110,22 @@
 // [TIMER4]$
 
 // $[USART0]
+// USART0 CLK on PC03
+#ifndef USART0_CLK_PORT                         
+#define USART0_CLK_PORT                          gpioPortC
+#endif
+#ifndef USART0_CLK_PIN                          
+#define USART0_CLK_PIN                           3
+#endif
+
+// USART0 CS on PC00
+#ifndef USART0_CS_PORT                          
+#define USART0_CS_PORT                           gpioPortC
+#endif
+#ifndef USART0_CS_PIN                           
+#define USART0_CS_PIN                            0
+#endif
+
 // USART0 CTS on PB05
 #ifndef USART0_CTS_PORT                         
 #define USART0_CTS_PORT                          gpioPortB

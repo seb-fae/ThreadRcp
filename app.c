@@ -26,7 +26,7 @@
 #include "app.h"
 
 #include "reset_util.h"
-
+rcpcom
 
 #ifdef BUILD_APP
 /**

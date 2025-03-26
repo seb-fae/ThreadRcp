@@ -1,0 +1,8 @@
+#CRC Codes for initially generated config files -- do not modify!
+SEGGER_RTT_Conf.h=826299495
+sl_cpc_config.h=1299225845
+sl_cpc_drv_secondary_spi_usart_exp_config.h=-339876374
+sl_cpc_drv_uart_usart_vcom_config.h=-1281145707
+sl_cpc_kernel_config.h=-792525160
+sl_cpc_security_config.h=365589171
+sl_iostream_vuart_config.h=1307377037
